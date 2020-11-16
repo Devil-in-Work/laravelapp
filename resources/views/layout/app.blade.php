@@ -7,6 +7,9 @@
         <title>{{config('app.name', 'laravelapp')}}</title>
     </head>
     <body>
-      @yield('content')
+      <div class="container">
+        @include('include.navbar')
+        @yield('content')
+      </div>
     </body>
 </html>
